@@ -1,0 +1,19 @@
+{
+  "name": "event-action",
+  "version": "1.0.0",
+  "description": "一个发布订阅器",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haijee/eventscript.git"
+  },
+  "author": "郭海杰",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haijee/eventscript/issues"
+  },
+  "homepage": "https://github.com/haijee/eventscript/#readme"
+}
