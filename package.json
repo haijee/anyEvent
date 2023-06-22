@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haijee/eventscript.git"
+    "url": "git+https://github.com/haijee/event-action.git"
   },
   "author": "郭海杰",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/haijee/eventscript/issues"
+    "url": "https://github.com/haijee/event-action/issues"
   },
-  "homepage": "https://github.com/haijee/eventscript/#readme"
+  "homepage": "https://github.com/haijee/event-action/#readme"
 }
