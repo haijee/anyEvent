@@ -1,11 +1,26 @@
 {
   "name": "event-action",
-  "version": "1.0.0",
-  "description": "一个发布订阅器",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "一个简单的发布订阅器",
+  "keywords": [
+    "event",
+    "emitter",
+    "typescript"
+  ],
+  "type": "module",
+  "main": "dist/event.cjs.js",
+  "module": "dist/event.esm.js",
+  "browser": "dist/event.umd.js",
+  "types": "types/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c --bundleConfigAsCjs && tsc -p ./tsconfig.type.json",
+    "dev": "rollup -w -c --bundleConfigAsCjs",
+    "tsc": "tsc -p ./tsconfig.type.json"
   },
+  "files": [
+    "dist/**/*",
+    "types/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/haijee/event-action.git"
@@ -15,5 +30,12 @@
   "bugs": {
     "url": "https://github.com/haijee/event-action/issues"
   },
-  "homepage": "https://github.com/haijee/event-action/#readme"
+  "homepage": "https://github.com/haijee/event-action/#readme",
+  "devDependencies": {
+    "rollup": "^3.25.1",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^2.5.3",
+    "typescript": "^5.1.3"
+  }
 }
